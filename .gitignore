@@ -1,0 +1,13 @@
+__pycache__/
+dist/
+.venv
+.pytest_cache/
+.ruff_cache/
+/docs/
+/reference/
+/.quarto/
+.DS_Store
+objects.json
+_sidebar.yml
+requirements-dev.lock
+requirements.lock

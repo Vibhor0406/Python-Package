@@ -1,0 +1,8 @@
+---
+title: "MLUno"
+subtitle: "Univariate Machine Learning"
+---
+
+Welcome!
+
+You are probably looking for the [**API Reference**](reference/index.qmd)!

@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+page-navigation: true
+
+metadata-files:
+  - _sidebar.yml
+
+website:
+  navbar:
+  
+    background: primary
+    search: true
+    left:
+      - text: ""
+        file: index.qmd
+      - text: "Reference"
+        file: reference/index.qmd
+
+quartodoc:
+  package: mluno
+  sidebar: _sidebar.yml
+  title : MLUno API Reference
+  sections:
+  - title: Data Utilities
+    desc: Functions for simulating and splitting data.
+    package: mluno.data
+    contents:
+      - make_line_data
+      - make_sine_data
+      - split_data
+  - title: Regressors
+    desc: Classes for regression methods.
+    package: mluno.regressors
+    contents: 
+      - KNNRegressor
+      - LinearRegressor
+  - title: Conformal Prediction
+    desc: Class for conformal prediction.
+    package: mluno.conformal
+    contents: 
+      - ConformalPredictor
+  - title: Metrics
+    desc: Functions for calculating regression metrics.
+    package: mluno.metrics
+    contents: 
+      - rmse
+      - mae
+      - coverage
+      - sharpness
+  - title: Plotting
+    desc: Function for plotting data and predictions.
+    package: mluno.plot
+    contents: 
+      - plot_predictions
